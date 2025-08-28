@@ -1,5 +1,5 @@
 {
-  "name": "expo-exit-app",
+  "name": "@ibrahim-rahhal/expo-exit-app",
   "version": "1.0.0",
   "description": "A React Native package for gracefully exiting Expo applications",
   "main": "lib/index.js",

@@ -1,4 +1,4 @@
-# expo-exit-app Example
+# @ibrahim-rahhal/expo-exit-app Example
 
 This is a complete example app demonstrating how to use the `expo-exit-app` package.
 

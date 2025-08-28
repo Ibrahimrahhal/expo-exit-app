@@ -1,8 +1,8 @@
-# expo-exit-app
+# @ibrahim-rahhal/expo-exit-app
 
 A React Native package for gracefully exiting Expo applications with multiple fallback strategies.
 
-[![npm version](https://badge.fury.io/js/expo-exit-app.svg)](https://badge.fury.io/js/expo-exit-app)
+[![npm version](https://badge.fury.io/js/@ibrahim-rahhal/expo-exit-app.svg)](https://badge.fury.io/js/@ibrahim-rahhal/expo-exit-app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🚀 Features
@@ -17,13 +17,13 @@ A React Native package for gracefully exiting Expo applications with multiple fa
 ## 📦 Installation
 
 ```bash
-npm install expo-exit-app
+npm install @ibrahim-rahhal/expo-exit-app
 ```
 
 or
 
 ```bash
-yarn add expo-exit-app
+yarn add @ibrahim-rahhal/expo-exit-app
 ```
 
 ## 🔧 Basic Usage
@@ -33,7 +33,7 @@ yarn add expo-exit-app
 ```tsx
 import React from 'react';
 import { View, Button, Alert } from 'react-native';
-import { useExitApp } from 'expo-exit-app';
+import { useExitApp } from '@ibrahim-rahhal/expo-exit-app';
 
 export default function App() {
   const { exit } = useExitApp();
@@ -68,7 +68,7 @@ export default function App() {
 ### Using the Class Directly
 
 ```tsx
-import { ExitApp, ExitStrategy } from 'expo-exit-app';
+import { ExitApp, ExitStrategy } from '@ibrahim-rahhal/expo-exit-app';
 
 // Simple exit with default options
 await ExitApp.exit();
@@ -191,7 +191,7 @@ Forces an unhandled error to crash the app. Uses `ErrorUtils.reportFatalError()`
 ### Custom Exit Flow
 
 ```tsx
-import { useExitApp, ExitStrategy } from 'expo-exit-app';
+import { useExitApp, ExitStrategy } from '@ibrahim-rahhal/expo-exit-app';
 
 export function useCustomExit() {
   const { exitWithStrategy, getSupportedStrategies } = useExitApp();
@@ -221,7 +221,7 @@ export function useCustomExit() {
 ```tsx
 import React, { useEffect } from 'react';
 import { Alert } from 'react-native';
-import { useExitApp } from 'expo-exit-app';
+import { useExitApp } from '@ibrahim-rahhal/expo-exit-app';
 
 export function RegionCheck() {
   const { exit } = useExitApp();
