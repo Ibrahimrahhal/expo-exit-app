@@ -1,0 +1,88 @@
+{
+  "name": "expo-exit-app",
+  "version": "1.0.0",
+  "description": "A React Native package for gracefully exiting Expo applications",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest",
+    "lint": "eslint src/**/*.{ts,tsx}",
+    "format": "prettier --write src/**/*.{ts,tsx}"
+  },
+  "keywords": [
+    "expo",
+    "react-native",
+    "exit",
+    "app",
+    "terminate",
+    "close",
+    "quit"
+  ],
+  "author": "Ibrahim Rahhal <ibrahim.rahhal3636@gmail.com> (https://github.com/Ibrahimrahhal)",
+  "license": "MIT",
+  "homepage": "https://github.com/Ibrahimrahhal/expo-exit-app#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibrahimrahhal/expo-exit-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ibrahimrahhal/expo-exit-app/issues"
+  },
+  "files": [
+    "lib",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "expo": ">=49.0.0",
+    "expo-updates": ">=0.18.0",
+    "react": ">=17.0.0",
+    "react-native": ">=0.64.0"
+  },
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "es5",
+    "singleQuote": true,
+    "printWidth": 80,
+    "tabWidth": 2
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "@typescript-eslint/recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "react", "react-hooks"],
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      }
+    }
+  }
+}

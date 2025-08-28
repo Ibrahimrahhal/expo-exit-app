@@ -1,0 +1,46 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+.eslintrc.js
+.prettierrc
+jest.config.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+.nyc_output
+
+# Tests
+**/*.test.ts
+**/*.test.tsx
+**/__tests__/
+
+# Example app
+example/
+
+# Git
+.git/
+.gitignore
+
+# CI
+.github/
+.travis.yml
+.circleci/
+
+# Temporary folders
+tmp/
+temp/
